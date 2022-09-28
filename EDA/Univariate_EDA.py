@@ -53,18 +53,9 @@ def walk_forward(data, n_test):
     predictions = list()
     train, test = train_test_split(data, n_test)
     history = [x for x in train]
+                     
+    return train, test, history
 
-    for i in range(len(test)):
-        x_test, y_test = test[i, :-1], test[i, 0]
-        yhat = xgboost_forecast(history, x_test)
-        predictions.append(yhat)
-        history.append(test[i])
-        print('>expected=%.1f, predicted=%.1f' % (y_test, yhat))
-#Input: %s, 
-    mae = mean_absolute_error(test[:, -1], predictions)
-    rmse = sqrt(mean_squared_error(test[:,-1],predictions))
-    
-    return mae, rmse,test[:, -1], predictions
 
 
                 
