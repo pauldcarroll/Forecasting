@@ -1,11 +1,30 @@
 #!/usr/bin/env python3
 
-""" EDA repo to prepare your data for univariate testing """
+""" EDA repo to prepare and investigate your data for univariate testing """
 
-import numpy as np
 import pandas as pd
-import pickle
+import numpy as np
 import matplotlib.pyplot as plt
+import warnings
+import seaborn as sns
+import matplotlib 
+import scipy 
+import sklearn
+
+from statsmodels.tsa.api import (kpss, adfuller,seasonal_decompose, STL)
+from statsmodels.tsa.seasonal import seasonal_decompose
+
+from statsmodels.tools.eval_measures import rmspe, rmse
+from sklearn.metrics import mean_absolute_percentage_error as mape
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+from itertools import product
+import statsmodels as sm
+from pathlib import Path
+import seaborn as sns
+import statsmodels.api
+
+warnings.filterwarnings('ignore')
+plt.rcParams["figure.figsize"] = [12, 5]
 
 df = pd.read_csv('../../data/weather.csv')
 df['date'] = pd.to_datetime(df[['Day','Month','Year']])
@@ -32,6 +51,17 @@ df.rename(columns=rename_map, inplace=True)
 def univariate_1(df):
   dfU = df.iloc[0:,5:6]
   return dfU
+
+# Investigat the dataset, is it stationary, is there trend. 
+
+def check_stationarity(df):
+    results = adfuller(df)[1:3]
+    s = 'Non-Stationary'
+    if results[0] < 0.05:
+        s = 'Stationary'
+        print(f"'{s}\t p-value:{results[0]} \t lags:{results[1]}")
+    return (s, results[0])
+
 
 
 def univariate_prep(data, n_in=1, n_out=1, dropnan=True):
