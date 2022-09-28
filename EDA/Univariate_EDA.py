@@ -56,7 +56,14 @@ def walk_forward(data, n_test):
                      
     return train, test, history
 
-
+utrain = '../../data/utrain.pickle'                                    
+train.to_pickle(utrain)
+  
+utest = '../../data/utest.pickle'                                       
+test.to_pickle(utest)
+                     
+history = '../../data/history.pickle'                                       
+history.to_pickle(history)                    
 
                 
                      
