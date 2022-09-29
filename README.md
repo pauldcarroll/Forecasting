@@ -1,5 +1,5 @@
 # Forecasting
-A repo of different forecasting methods appropriate for different situations
+A repo of different forecasting methods appropriate for different situations.
 
 
 Within this repo, there are several ways of going about Time Series Forecasting. 
