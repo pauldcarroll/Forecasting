@@ -1,9 +1,9 @@
 # Forecasting
-A repo of different forecasting methods appropriate for different situations.
+A repo of different forecasting methods for different situations.
 
 
 Within this repo, there are several ways of going about Time Series Forecasting (TSF). 
-When you come to look at a dataset, and the question is, how do I predict from my existing, quite often the area that's hardest is knowing where to begin, how to go about the forecasting, and what method is most appropriate, and will give you the best results.
+When you come to look at a dataset, and the question is, how do I predict y from my existing data, quite often the area that's hardest is knowing where to begin, how to go about the forecasting, and what method is most appropriate, and will give you the best results.
 
 What this repo will do, is try and guide you through this forest, so you can see the wood for the trees. The repo will only cover numerical forecasting, so regression style forecasting, as opposed to classification (binary) forecasting. 
 
@@ -15,7 +15,7 @@ Additionally we will use a basic linear regression model for these scores, and u
 ### Know your data
 
 The starting point for any data analysis, is to know your data. What do I mean by this?
-Lets go a 5 step process specifically for Time Series Forecasting. 
+Lets go through a 5 step process specifically for Time Series Forecasting. 
 
 1. Is your dataset univariate of multivariate. I.e. do you just a list of Temperatures for the last x years, and are trying to forecast the next week's temperatures. Or do you have a dataframe of variables about weather, so sunshine hours, cloudcover, rainfall, and are trying to forecast the temperature from these other variables. This way of thinking can be applied to any dataset. Previous stock prices for next few days' stock price, or patient's admission dataset and history to forecast their outcome at time of admission, or length of stay post admission.
 The answer to this will help you decide which models to use in this repo. 
