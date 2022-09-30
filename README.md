@@ -24,3 +24,13 @@ The answer to this will help you decide which models to use in this repo.
 
 5. Examine your model and your data. What are you trying to forecast? Is it bank holiday attendances in hospital A&E. If so, if your model performing badly and you don't know why? Take a step back here and look at the data you're feeding into your model. For example if you have A&E attendance figures for the last 5 years, and you're trying to forecast the next three bank holiday attendances, why are you feeding in all the datapoints? Split your data into bank holiday data and other data, or weekend data, bank holiday data and non-weekend data, and re-run your models. Forecasting isn't an exact science, but being prepared to iterate over the numbers, refine your models by experimentation not just on hyper-parameters but also on datasets used for training. You may see your results improve dramatically following this. 
 
+
+
+## Baselines
+
+Lets begin this by finding the mean of the dataset. 
+
+With Time Series data you can average the whole length of the dataset, and take this as your next forecast baseline.
+This works if your data doesn't have trend, or the mean takes into account a whole seasonal period. 
+
+Code for this is in the baseline code section. 
