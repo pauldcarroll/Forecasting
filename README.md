@@ -46,9 +46,9 @@ Code and Instructions are in the Baselines.py file.
 
 [![Python v3.8](https://img.shields.io/badge/python-v3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 [![Python v3.9](https://img.shields.io/badge/python-v3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
-- [Folium](https://python-visualization.github.io/folium/)
-- [OSMnx](https://osmnx.readthedocs.io/en/stable/)
-- [NetworkX](https://networkx.org/)
+- [sklearn](https://scikit-learn.org/stable/)
+- [statsmodels](https://www.statsmodels.org/stable/index.html)
+- [NetworkX](https://tensorflow.org/)
 
 ### Getting Started
 
