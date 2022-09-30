@@ -22,6 +22,8 @@ The answer to this will help you decide which models to use in this repo.
 
 2. Critical within model accuracy is data preparation. Is your data stationary? What does this mean. Stock prices are a good example of this, as is energy usage over a year. Both of these over time, will display either trend or seasonality or both. In order for your models to perform better, a time series will need to be made stationary. If youre time series is not stationary, it came be made stationary by differencing. What this means, is instead of training a model on a series of stock prices, the model performs a lot better on the differences in the period stock prices, so +0.5, -0.25, +0.75, as opposed to 175, 175.5, 175.25, 176. In stats we call this the p value. 
 
+3. Autocorrelation and partial autocorrelation. 
+
 5. Examine your model and your data. What are you trying to forecast? Is it bank holiday attendances in hospital A&E. If so, if your model performing badly and you don't know why? Take a step back here and look at the data you're feeding into your model. For example if you have A&E attendance figures for the last 5 years, and you're trying to forecast the next three bank holiday attendances, why are you feeding in all the datapoints? Split your data into bank holiday data and other data, or weekend data, bank holiday data and non-weekend data, and re-run your models. Forecasting isn't an exact science, but being prepared to iterate over the numbers, refine your models by experimentation not just on hyper-parameters but also on datasets used for training. You may see your results improve dramatically following this. 
 
 
