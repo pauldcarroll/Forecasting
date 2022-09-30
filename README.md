@@ -1,4 +1,4 @@
-# Forecasting
+# Time Series Forecasting
 A repo of different forecasting methods for different situations.
 
 
@@ -27,6 +27,9 @@ The answer to this will help you decide which models to use in this repo.
 4. Length of dataset. If you have a small/ short dataset, more often than not, means and simple linear regression perform extremely well. ARIMA, SARIMAX and LSTM are a lot of work to get a model working on your dataset. On small datasets it's extremely for these models to beat the performance from simple means, or Linear Regression (Elastic Nets, Ridge and Lasso). What qualifies as small, anything under 100 data points for multivariate datasets, and under 1000 for univariate datasets.
 
 5. Examine your model and your data. What are you trying to forecast? Is it bank holiday attendances in hospital A&E. If so, if your model performing badly and you don't know why? Take a step back here and look at the data you're feeding into your model. For example if you have A&E attendance figures for the last 5 years, and you're trying to forecast the next three bank holiday attendances, why are you feeding in all the datapoints? Split your data into bank holiday data and other data, or weekend data, bank holiday data and non-weekend data, and re-run your models. Forecasting isn't an exact science, but being prepared to iterate over the numbers, refine your models by experimentation not just on hyper-parameters but also on datasets used for training. You may see your results improve dramatically following this. 
+For example here, if you've run a multivariate dataset through a LinearRegression model, and it's performed ok, but you're not sure where to go next. 
+Experiment, try ElasticNet, or Lasso regression, drop the bottom performing 5% of variables and see if this improves the model performance. 
+Iterate, and experiment. Add a gridsearch to the regression, code for this is in the XGBoost file.
 
 
 
