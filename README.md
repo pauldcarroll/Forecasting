@@ -48,7 +48,7 @@ Code and Instructions are in the Baselines.py file.
 [![Python v3.9](https://img.shields.io/badge/python-v3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 - [sklearn](https://scikit-learn.org/stable/)
 - [statsmodels](https://www.statsmodels.org/stable/index.html)
-- [NetworkX](https://tensorflow.org/)
+- [Tensorflow](https://tensorflow.org/)
 
 ### Getting Started
 
