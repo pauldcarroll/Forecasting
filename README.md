@@ -41,3 +41,46 @@ With Time Series data you can average the whole length of the dataset, and take 
 This works if your data doesn't have trend, or the mean takes into account a whole seasonal period. 
 
 Code and Instructions are in the Baselines.py file. 
+
+### Built With
+
+[![Python v3.8](https://img.shields.io/badge/python-v3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python v3.9](https://img.shields.io/badge/python-v3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+- [Folium](https://python-visualization.github.io/folium/)
+- [OSMnx](https://osmnx.readthedocs.io/en/stable/)
+- [NetworkX](https://networkx.org/)
+
+### Getting Started
+
+### Installation
+
+Install the above software packages as per the following example:
+conda install -c conda-forge osmnx
+
+To get a local copy up and running follow these simple steps.
+
+To clone the repo:
+
+`git clone https://github.com/nhsx/Forecasting.git`
+
+### Datasets
+
+The data sources are saved for your use in the data folder in the repo, or are widely available with links to the data within the workbooks. 
+
+### Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+_See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidance._
+
+### License
+
+Distributed under the MIT License. _See [LICENSE](./LICENSE) for more information._
+
+
