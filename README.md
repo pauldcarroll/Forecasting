@@ -86,7 +86,9 @@ Distributed under the MIT License. _See [LICENSE](./LICENSE) for more informatio
 ### Sources/ Citations
 
 Brazil Nuts repo - Paul Carroll - https://github.com/pauliecarroll/BrazilNuts
+
 Machine Learning Mastery - https://machinelearningmastery.com/
+
 Time Series Analysis with Python Cookbook - Tarek Atwan (Packt 2022)
 
 
